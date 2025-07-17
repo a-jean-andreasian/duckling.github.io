@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <title>🦆 Duckling Search Engine</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans leading-relaxed p-8">
-  <div class="max-w-3xl mx-auto bg-white shadow rounded-xl p-8 space-y-8">
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans leading-relaxed p-8 transition-colors duration-300">
+  <div class="max-w-3xl mx-auto bg-white dark:bg-gray-800 shadow rounded-xl p-8 space-y-8">
 
-    <h1 class="text-4xl font-bold">🦆 Duckling Search Engine</h1>
+    <div class="flex justify-between items-center">
+      <h1 class="text-4xl font-bold">🦆 Duckling Search Engine</h1>
+      <button id="toggleDark" class="text-sm px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded">
+        Toggle Theme
+      </button>
+    </div>
 
     <div class="flex flex-wrap gap-2">
       <img src="https://img.shields.io/badge/Version-0.1.0-blue" alt="Version Badge">
@@ -16,7 +26,7 @@
       <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License Badge">
     </div>
 
-    <hr class="border-gray-300" />
+    <hr class="border-gray-300 dark:border-gray-700" />
 
     <section>
       <h2 class="text-2xl font-semibold mb-2">✨ Features</h2>
@@ -30,7 +40,7 @@
       <h3 class="text-xl font-semibold mt-4">🧠 Banned Words Filtering</h3>
       <ul class="list-disc ml-6">
         <li>Custom blacklist (e.g. violence, drugs, illegal topics)</li>
-        <li>Integrated <a class="text-blue-600 underline" href="https://pypi.org/project/better-profanity/">better_profanity</a> for extra filtering</li>
+        <li>Integrated <a class="text-blue-500 underline" href="https://pypi.org/project/better-profanity/">better_profanity</a> for extra filtering</li>
       </ul>
 
       <h3 class="text-xl font-semibold mt-4">🖼️ Beautiful Frontend (TailwindCSS)</h3>
@@ -48,21 +58,21 @@
       </ul>
     </section>
 
-    <hr class="border-gray-300" />
+    <hr class="border-gray-300 dark:border-gray-700" />
 
     <section>
       <h2 class="text-2xl font-semibold mb-2">🔐 Banned Words</h2>
       <p>Your <code>utils.py</code> includes a curated list of blocked terms (weapons, drugs, scams, adult content, etc). Use <code>is_banned(query)</code> to enforce it in backend logic.</p>
     </section>
 
-    <hr class="border-gray-300" />
+    <hr class="border-gray-300 dark:border-gray-700" />
 
     <section>
       <h2 class="text-2xl font-semibold mb-2">💻 Frontend Preview</h2>
       <img src="https://i.ibb.co/DDkJgDRd/Untisstled.png" alt="Screenshot" class="rounded-lg shadow">
     </section>
 
-    <hr class="border-gray-300" />
+    <hr class="border-gray-300 dark:border-gray-700" />
 
     <section>
       <h2 class="text-2xl font-semibold mb-2">👨‍💻 Author</h2>
@@ -70,5 +80,14 @@
     </section>
 
   </div>
+
+  <script>
+    const toggleBtn = document.getElementById('toggleDark');
+    const root = document.documentElement;
+
+    toggleBtn.addEventListener('click', () => {
+      root.classList.toggle('dark');
+    });
+  </script>
 </body>
 </html>
