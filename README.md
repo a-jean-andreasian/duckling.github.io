@@ -3,10 +3,12 @@
 ![Version](https://img.shields.io/badge/Version-0.1.0-blue) ![Built With](https://img.shields.io/badge/Built%20With-FastAPI-brightgreen) ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
-## Deployments
+### 🚀 Deployments
 
-- Deployment 1: [Render](https://duckling-search-engine.onrender.com/)
-- Documentation: [Github Pages](https://a-jean-andreasian.github.io/duckling.github.io/)
+| Type             | Link                                                                                                      |
+| ---------------- | --------------------------------------------------------------------------------------------------------- |
+| 🌐 Live App      | [duckling-search-engine.onrender.com](https://duckling-search-engine.onrender.com/)                       |
+| 📘 Documentation | [a-jean-andreasian.github.io/duckling.github.io](https://a-jean-andreasian.github.io/duckling.github.io/) |
 
 ---
 ## ✨ Features
