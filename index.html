@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🦆 Duckling Search Engine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans leading-relaxed p-8">
+  <div class="max-w-3xl mx-auto bg-white shadow rounded-xl p-8 space-y-8">
+
+    <h1 class="text-4xl font-bold">🦆 Duckling Search Engine</h1>
+
+    <div class="flex flex-wrap gap-2">
+      <img src="https://img.shields.io/badge/Version-0.1.0-blue" alt="Version Badge">
+      <img src="https://img.shields.io/badge/Built%20With-FastAPI-brightgreen" alt="Built With Badge">
+      <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License Badge">
+    </div>
+
+    <hr class="border-gray-300" />
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">✨ Features</h2>
+
+      <h3 class="text-xl font-semibold mt-4">🔒 Secure Access</h3>
+      <ul class="list-disc ml-6">
+        <li>Session-based access</li>
+        <li>Rate limiting to prevent abuse</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold mt-4">🧠 Banned Words Filtering</h3>
+      <ul class="list-disc ml-6">
+        <li>Custom blacklist (e.g. violence, drugs, illegal topics)</li>
+        <li>Integrated <a class="text-blue-600 underline" href="https://pypi.org/project/better-profanity/">better_profanity</a> for extra filtering</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold mt-4">🖼️ Beautiful Frontend (TailwindCSS)</h3>
+      <ul class="list-disc ml-6">
+        <li>Clean, responsive UI with Tailwind</li>
+        <li>Live result updates with minimal JS</li>
+        <li>Search form includes error handling</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold mt-4">🔍 Hybrid Data Retrieval</h3>
+      <ul class="list-disc ml-6">
+        <li>Uses local data, crawlers, and third-party APIs</li>
+        <li>Stores user queries to build a private dataset</li>
+        <li>Goal: become a self-sustaining, autonomous search engine</li>
+      </ul>
+    </section>
+
+    <hr class="border-gray-300" />
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">🔐 Banned Words</h2>
+      <p>Your <code>utils.py</code> includes a curated list of blocked terms (weapons, drugs, scams, adult content, etc). Use <code>is_banned(query)</code> to enforce it in backend logic.</p>
+    </section>
+
+    <hr class="border-gray-300" />
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">💻 Frontend Preview</h2>
+      <img src="https://i.ibb.co/DDkJgDRd/Untisstled.png" alt="Screenshot" class="rounded-lg shadow">
+    </section>
+
+    <hr class="border-gray-300" />
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">👨‍💻 Author</h2>
+      <p>Made by <strong>Armen-Jean Andreasian</strong>, a pragmatic backend developer who prefers real work over LinkedIn fluff.</p>
+    </section>
+
+  </div>
+</body>
+</html>
