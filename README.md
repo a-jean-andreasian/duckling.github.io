@@ -37,12 +37,6 @@
 * Goal: become a self-sustaining, autonomous search engine
 
 ---
-
-## 🔐 Banned Words
-
-Your utils.py includes a curated list of blocked terms (weapons, drugs, scams, adult content, etc). Use is_banned(query) to enforce it in backend logic.
-
----
 ## 💻 Frontend Preview
 
 ![Screenshot](https://i.ibb.co/DDkJgDRd/Untisstled.png)
